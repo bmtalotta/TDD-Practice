@@ -4,14 +4,12 @@
 #include <string>
 #include <vector>
 #include <cmath>
-
+#include "stringCalculator.hpp"
 
 
 
 /************** Tests for TDD practice cs372 HW2 **************/
 
-TEST_CASE("example"){
-    std::shared_ptr<Shape> checkCircle1 = makeCircle(1);
-    CHECK(checkCircle1->getHeight() == 2);
-    CHECK(checkCircle1->getWidth() == 2);
+TEST_CASE("empty string returns 0"){
+    CHECK(stringCalculator("") == 0);
 }
