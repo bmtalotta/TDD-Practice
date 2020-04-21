@@ -29,7 +29,7 @@ TEST_CASE("two numbers newline deliminated returns the sum"){
     CHECK(stringCalculator("4\n1") == 5);
 }
 TEST_CASE("three numbers deliminated returns the sum"){
-    CHECK(stringCalculator("1,1,1") == 3);
-    CHECK(stringCalculator("6,2\n2") == 10);
-    CHECK(stringCalculator("4\n1\n-2") == 3);
+    CHECK(stringCalculator("1,1,1") == CHECK_THROWS);
+    CHECK(stringCalculator("6,2\n2") == CHECK_THROWS);
+    CHECK(stringCalculator("4\n1\n-2") == CHECK_THROWS);
 }
