@@ -18,3 +18,7 @@ TEST_CASE("single number returns same value"){
     CHECK(stringCalculator("1") == 1);
     CHECK(stringCalculator("14") == 14);
 }
+TEST_CASE("two numbers comma deliminated returns the sum"){
+    CHECK(stringCalculator("1,1") == 2);
+}
+
