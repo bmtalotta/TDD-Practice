@@ -13,3 +13,8 @@
 TEST_CASE("empty string returns 0"){
     CHECK(stringCalculator("") == 0);
 }
+TEST_CASE("single number returns same value"){
+    CHECK(stringCalculator("6") == 6);
+    CHECK(stringCalculator("1") == 1);
+    CHECK(stringCalculator("14") == 14);
+}
